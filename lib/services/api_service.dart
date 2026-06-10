@@ -27,15 +27,12 @@ class ApiService {
         // if (token != null) {
         //   options.headers['Authorization'] = 'Bearer $token';
         // }
-        print('REQUEST[${options.method}] => PATH: ${options.path}');
         return handler.next(options);
       },
       onResponse: (response, handler) {
-        print('RESPONSE[${response.statusCode}] => PATH: ${response.requestOptions.path}');
         return handler.next(response);
       },
       onError: (error, handler) {
-        print('ERROR[${error.response?.statusCode}] => PATH: ${error.requestOptions.path}');
         return handler.next(error);
       },
     ));

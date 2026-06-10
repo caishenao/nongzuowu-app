@@ -85,8 +85,6 @@ class _BusinessOverviewScreenState extends State<BusinessOverviewScreen> {
         final totalArea = dashboard?.totalAreaMu?.toStringAsFixed(1) ?? '0';
         final cropCount = dashboard?.activeCropCount ?? 0;
         final taskCount = dashboard?.pendingTaskCount ?? 0;
-        final fieldCount = dashboard?.totalFieldCount ?? 0;
-        
         return Container(
           padding: const EdgeInsets.all(18),
           decoration: BoxDecoration(

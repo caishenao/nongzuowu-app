@@ -57,6 +57,7 @@ class _WeatherReminderScreenState extends State<WeatherReminderScreen> {
         final weather = provider.latestWeather;
         final temp = weather?.temperature?.toStringAsFixed(0) ?? '24';
         final rainfall = weather?.rainfall?.toStringAsFixed(1) ?? '0';
+        final humidity = weather?.soilMoisture?.toStringAsFixed(0) ?? '62';
 
         final desc = weather?.weatherDesc ?? '多云转阵雨';
         

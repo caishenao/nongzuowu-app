@@ -1,0 +1,82 @@
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+**/doc/api/
+*.iml
+
+# IDE
+.idea/
+.vscode/
+*.ipr
+*.iws
+
+# Android
+android/.gradle
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+android/key.properties
+*.jks
+*.keystore
+
+# iOS
+ios/**/*.mode1v3
+ios/**/*.mode2v3
+ios/**/*.moved-aside
+ios/**/*.pbxuser
+ios/**/*.perspectivev3
+**/ios/**/*.pyc
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+
+# macOS
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral/
+**/xcuserdata/
+
+# Web
+**/web/favicon.png
+**/web/icons/Icon-192.png
+**/web/icons/Icon-512.png
+**/web/icons/Icon-maskable-192.png
+**/web/icons/Icon-maskable-512.png
+**/web/manifest.json
+
+# Linux
+**/linux/flutter/ephemeral/
+**/linux/flutter/generated_plugins.cmake
+
+# Windows
+**/windows/flutter/ephemeral/
+**/windows/flutter/generated_plugins.cmake
+
+# Debug
+*.log
+debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Secrets
+.env
+.env.local
+.env.production
+secrets/

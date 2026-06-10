@@ -144,16 +144,16 @@ class _MapPlottingScreenState extends State<MapPlottingScreen> {
             FlutterMap(
               mapController: _mapController,
               options: MapOptions(
-                center: _center,
-                zoom: _zoom,
+                initialCenter: _center,
+                initialZoom: _zoom,
                 onTap: (tapPosition, point) {
                   _addBoundaryPoint(point);
                 },
                 onPositionChanged: (position, hasGesture) {
                   if (hasGesture) {
                     setState(() {
-                      _center = position.center;
-                      _zoom = position.zoom;
+                      _center = position.center ?? _center;
+                      _zoom = position.zoom ?? _zoom;
                     });
                   }
                 },
@@ -187,7 +187,7 @@ class _MapPlottingScreenState extends State<MapPlottingScreen> {
                       point: entry.value,
                       width: 24,
                       height: 24,
-                      builder: (ctx) => GestureDetector(
+                      child: GestureDetector(
                         onLongPress: () {
                           _removeBoundaryPoint(entry.key);
                         },

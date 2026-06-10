@@ -355,7 +355,7 @@ class AiRecognitionScreen extends StatelessWidget {
           const SizedBox(height: 8),
           _buildAdviceItem(Icons.water_drop, '今日傍晚补水 18-22mm'),
           const SizedBox(height: 6),
-          _buildAdviceItem(Icons.sprout, '48 小时内追施氮肥 6kg/亩'),
+          _buildAdviceItem(Icons.eco, '48 小时内追施氮肥 6kg/亩'),
           const SizedBox(height: 6),
           _buildAdviceItem(Icons.center_focus_strong, '三天后复拍同一地块对比'),
         ],

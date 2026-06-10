@@ -110,7 +110,7 @@ class _MainAppState extends State<MainApp> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               _buildNavItem(0, Icons.map_outlined, Icons.map, '地图'),
-              _buildNavItem(1, Icons.sprout_outlined, Icons.sprout, '作物'),
+              _buildNavItem(1, Icons.eco_outlined, Icons.eco, '作物'),
               _buildNavItem(2, Icons.notifications_outlined, Icons.notifications, '提醒'),
               _buildNavItem(3, Icons.camera_alt_outlined, Icons.camera_alt, '识别'),
               _buildNavItem(4, Icons.dashboard_outlined, Icons.dashboard, '总览'),

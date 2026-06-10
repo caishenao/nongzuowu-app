@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/nong_providers.dart';
 import '../models/api_models.dart';
-import '../widgets/common_widgets.dart';
+
 
 class BusinessOverviewScreen extends StatefulWidget {
   const BusinessOverviewScreen({super.key});
@@ -425,7 +425,7 @@ class _BusinessOverviewScreenState extends State<BusinessOverviewScreen> {
         iconColor = Colors.white;
         break;
       case 'FERTILIZE':
-        icon = Icons.sprout;
+        icon = Icons.eco;
         iconBg = const Color(0xFFD7F05B);
         iconColor = const Color(0xFF17211A);
         break;

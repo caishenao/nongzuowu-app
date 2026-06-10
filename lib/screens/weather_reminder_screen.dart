@@ -164,7 +164,7 @@ class _WeatherReminderScreenState extends State<WeatherReminderScreen> {
     return Consumer<WeatherProvider>(
       builder: (context, provider, child) {
         final weather = provider.latestWeather;
-        final soilMoisture = weather?.soilMoisture?.toStringAsFixed(0) ?? '62';
+        
         
         return Column(
           children: [
